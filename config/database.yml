@@ -12,8 +12,6 @@ default: &default
 
 development:
   <<: *default
-  username: mailboxtrack
-  password: 
   database: starter_backend_development
 
 # Warning: The database defined as "test" will be erased and
