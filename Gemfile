@@ -10,7 +10,6 @@ gem 'omniauth',  '>= 1.0.0'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 
-gem 'sqlite3'
 
 gem 'pg'
 # Use Puma as the app server
