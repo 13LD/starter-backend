@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  username: mailboxtrack
+  username: starter_backend
   password: 
   database: starter_backend_development
 
