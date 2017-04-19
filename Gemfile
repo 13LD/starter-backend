@@ -9,11 +9,12 @@ gem 'listen', :group => :development
 gem 'omniauth',  '>= 1.0.0'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+gem 'rack-cors', :require => 'rack/cors'
 
 
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+# gem 'puma', '~> 3.0'
 
 
 # To use ActiveModel has_secure_password

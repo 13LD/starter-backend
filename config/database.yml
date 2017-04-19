@@ -6,12 +6,13 @@
 
 default: &default
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
+  encoding: unicode
+  pool: 5
 
 development:
   <<: *default
+  username: mailboxtrack
+  password: 
   database: starter_backend_development
 
 # Warning: The database defined as "test" will be erased and

@@ -11,7 +11,6 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
-  config.assets.initialize_on_precompile = false
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
@@ -26,7 +25,16 @@ Rails.application.configure do
 
     config.cache_store = :null_store
   end
-
+  config.action_mailer.default_url_options = { host: "127.0.0.1:3000" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "yoururl.com",
+    authentication: "plain",  
+    user_name: "mailboxtrack@gmail.com",
+    password: "mailbox123"
+  }
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
