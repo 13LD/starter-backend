@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   sessions:           'devise_token_auth/sessions',
   token_validations:  'devise_token_auth/token_validations'
  }
-  resources :roles
-  resources :users
+ resources :roles
+ resources :users
+ get 'resend_email/resend_email'
+
 end
