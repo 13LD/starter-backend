@@ -157,7 +157,7 @@ DEPENDENCIES
   devise_token_auth
   listen
   omniauth (>= 1.0.0)
-  omniauth-facebook (= 1.4.0)
+  omniauth-facebook
   omniauth-google-oauth2
   pg
   rack-cors
