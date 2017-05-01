@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module StarterBackend
   class Application < Rails::Application
-    config.action_mailer.default_url_options = { :host => 'localhost' }
+    # config.action_mailer.default_url_options = { :host => 'localhost' }
     config.middleware.use Rack::MethodOverride
 config.middleware.use ActionDispatch::Cookies
 config.middleware.use ActionDispatch::Session::CookieStore
