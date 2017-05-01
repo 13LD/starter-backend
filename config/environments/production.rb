@@ -37,6 +37,8 @@ Rails.application.configure do
     user_name: "mailboxtrack@gmail.com",
     password: "mailbox123"
   }
+  config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.perform_deliveries = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
