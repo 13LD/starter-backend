@@ -10,7 +10,7 @@ gem 'omniauth',  '>= 1.0.0'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'rack-cors', :require => 'rack/cors'
-
+ gem 'omniauth-oauth2', '~> 1.3.1'
 
 gem 'pg'
 # Use Puma as the app server
