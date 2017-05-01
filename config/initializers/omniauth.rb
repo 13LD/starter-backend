@@ -6,5 +6,5 @@ client_options: {
 site: 'https://graph.facebook.com/v2.6',
 authorize_url: 'https://www.facebook.com/v2.6/dialog/oauth'
 }
-  provider :google_oauth2, "895506813976-urgi8tgmpddkf2h2kqirhknd8kuh54kr.apps.googleusercontent.com",   "viclVjieNIutMteARG7mmcy7", :redirect_uri => 'https://fathomless-bastion-13925.herokuapp.com/auth/google_oauth2/callback',
+  provider :google_oauth2, "895506813976-urgi8tgmpddkf2h2kqirhknd8kuh54kr.apps.googleusercontent.com",   "viclVjieNIutMteARG7mmcy7", redirect_uri: 'https://fathomless-bastion-13925.herokuapp.com/auth/google_oauth2/callback'
 end
