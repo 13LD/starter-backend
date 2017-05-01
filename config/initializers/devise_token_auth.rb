@@ -6,14 +6,6 @@ DeviseTokenAuth.setup do |config|
   # config.change_headers_on_each_request = true
 
   config.default_password_reset_url = 'https://fathomless-bastion-13925.herokuapp.com/'
-  Rails.application.config.to_prepare do              # to_prepare ensures that the monkey patching happens before the first request
-    Devise::OmniauthCallbacksController.class_eval do # reopen the class
-      def failure                                     # redefine the failure method
-        set_flash_message! :alert, :failure, kind: OmniAuth::Utils.camelize(failed_strategy.name), reason: failure_message
-        redirect_to after_omniauth_failure_path_for(resource_name)
-      end
-    end
-  end
   # By default, users will need to re-authenticate after 2 weeks. This setting
   # determines how long tokens will remain valid after they are issued.
   # config.token_lifespan = 2.weeks

@@ -7,9 +7,11 @@ gem 'devise_token_auth'
 gem 'spring', :group => :development
 gem 'listen', :group => :development
 gem 'omniauth',  '>= 1.0.0'
+gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'omniauth-facebook'
+
+
 gem 'pg'
 # Use Puma as the app server
 # gem 'puma', '~> 3.0'
