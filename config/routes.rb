@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
  mount_devise_token_auth_for 'User', at: 'auth', controllers: {
-  confirmations:      'devise_token_auth/confirmations',
+  confirmations:  	  'confirmations',
   passwords:          'devise_token_auth/passwords',
   omniauth_callbacks: 'devise_token_auth/omniauth_callbacks',
   registrations:      'registrations',
@@ -11,5 +11,5 @@ Rails.application.routes.draw do
  resources :roles
  resources :users
  get 'resend_email/resend_email'
-
+ # post 'confirmations'
 end

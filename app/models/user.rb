@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   devise  :database_authenticatable, :registerable,
           :recoverable, :rememberable, :trackable, :validatable,
-          :omniauthable
+          :confirmable, :omniauthable
         
   include DeviseTokenAuth::Concerns::User
   has_one :role
