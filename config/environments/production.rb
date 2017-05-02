@@ -36,6 +36,7 @@ Rails.application.configure do
     authentication: "plain",  
     user_name: "mailboxtrack@gmail.com",
     password: "mailbox123",
+    authentication: 'plain',
     enable_starttls_auto: true,
     :openssl_verify_mode => 'none'
   }
