@@ -10,6 +10,4 @@ Rails.application.routes.draw do
  }
  resources :roles
  resources :users
- get 'resend_email/resend_email'
- # post 'confirmations'
 end
