@@ -13,5 +13,6 @@ authorize_url: 'https://www.facebook.com/v2.6/dialog/oauth'
 	prompt: 'select_account consent',
     access_type: 'offline',
     scope: 'userinfo.profile,userinfo.email,youtube',
+	redirect_uri: 'https://fathomless-bastion-13925.herokuapp.com/auth/google_oauth2/callback'
     }
 end
