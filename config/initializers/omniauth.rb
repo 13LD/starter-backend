@@ -9,6 +9,6 @@ OmniAuth.config.full_host = Rails.env.production? ? 'https://fathomless-bastion-
 	prompt: 'select_account consent',
     access_type: 'offline',
     scope: 'userinfo.profile,userinfo.email,youtube',
-	redirect_uri: 'https://fathomless-bastion-13925.herokuapp.com/auth/google_oauth2/callback'
+	redirect_uri: 'http://fathomless-bastion-13925.herokuapp.com/omniauth/google_oauth2/callback'
     }
 end
