@@ -3,16 +3,19 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
   # GET /users
   def index
-    @users = User.all
-
+    if params[:search].present?
+      @users =  User.search(params[:search])
+    else
+      @users = User.all
+    end
     render json: @users
+
   end
 
   # GET /users/1
   def show
     render json: @user
   end
-
 
   # POST /users
   def create

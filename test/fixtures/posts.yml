@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attachment: MyString
+  cached_votes_up: 1
+  comments_count: 1
+  content: MyText
+  user: one
+
+two:
+  attachment: MyString
+  cached_votes_up: 1
+  comments_count: 1
+  content: MyText
+  user: two

@@ -10,8 +10,6 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
-  OmniAuth.config.full_host = "https://fathomless-bastion-13925.herokuapp.com/"
-
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -27,20 +25,6 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-  config.action_mailer.default_url_options = { host: "https://fathomless-bastion-13925.herokuapp.com/" }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "yoururl.com",
-    authentication: "plain",  
-    user_name: "mailboxtrack@gmail.com",
-    password: "mailbox123",
-    authentication: 'plain',
-    enable_starttls_auto: true,
-    :openssl_verify_mode => 'none'
-  }
-  config.action_mailer.perform_deliveries = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

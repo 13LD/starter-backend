@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cached_votes_up: 1
+  comments_count: 1
+  name: MyString
+  when: 2017-06-06 03:44:04
+  user: one
+
+two:
+  cached_votes_up: 1
+  comments_count: 1
+  name: MyString
+  when: 2017-06-06 03:44:04
+  user: two
